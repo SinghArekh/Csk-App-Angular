@@ -1,0 +1,19 @@
+.main-img{
+    display: block;
+    margin-left: 150px;
+}
+.child-img{
+    width: 450px;
+    height: 250px;
+    margin: 10px;
+}
+.first-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

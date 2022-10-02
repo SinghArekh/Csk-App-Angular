@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <h2>Add New Player </h2>
+        <p>Player ID :- <input type ="text" disabled class="form-control" [(ngModel)]="tm.playerId"/></p>
+        <p>Player Name :- <input type ="text" class="form-control" [(ngModel)]="tm.playerName"/></p>
+        <p>Role :- <input type ="text" class="form-control" [(ngModel)]="tm.role"/></p>
+        <p>Jersey No :- <input type ="text" class="form-control" [(ngModel)]="tm.jerseyNo"/></p>
+        <p>Country :- <input type ="text" class="form-control" [(ngModel)]="tm.playerCountry"/></p>
+        <p>Salary :- <input type ="text" class="form-control" [(ngModel)]="tm.playerSalary"/></p>
+        <input type="file" required />
+<!-- <img [src]="imageShow" height="200"> <br/> --> 
+        <p>
+            <button class="btn btn-info m-lg-2" (click) ="addDataToDatabase()">Save Changes</button>
+            <button class="btn btn-primary" routerLink="/Team/All">
+                <i class="fa fa-arrow-left"></i> Back</button>
+        </p>
+    </div>
+  </div>

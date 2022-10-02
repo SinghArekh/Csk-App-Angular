@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <h4>Editing {{foundTm.playerName}} </h4>
+        <p>Player ID :- <input type ="text" disabled class="form-control" [(ngModel)]="foundTm.playerId"/></p>
+        <p>Player Name :- <input type ="text" class="form-control" [(ngModel)]="foundTm.playerName"/></p>
+        <p>Role :- <input type ="text" class="form-control" [(ngModel)]="foundTm.role"/></p>
+        <p>Country :- <input type ="text" class="form-control" [(ngModel)]="foundTm.playerCountry"/></p>
+        <p>Player Salary :- <input type ="text" class="form-control" [(ngModel)]="foundTm.playerSalary"/></p>
+        <!-- <p>Ticket Status :- <input type ="file" class="form-control" [(ngModel)]="foundTm.playerImg"/></p> -->
+
+        <p>
+            <button class="btn btn-info m-lg-2" (click) ="onSubmit()">Save Changes</button>
+            <button class="btn btn-primary" routerLink="/Team/All">
+                <i class="fa fa-arrow-left"></i> Back</button>
+        </p>
+    </div>
+  </div>

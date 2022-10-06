@@ -13,6 +13,7 @@ export class AllPlayerComponent implements OnInit {
   plrId:any;
   plrList:Team[] = [];
   selected : Team = {} as Team;
+  searchValue:string=""
 
 
 

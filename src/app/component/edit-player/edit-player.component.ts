@@ -27,7 +27,7 @@ export class EditPlayerComponent implements OnInit {
 
   onSubmit(){
     this.tmService.updatePlayer(this.foundTm).subscribe((data) =>{
-      // alert(data)
+      alert("Player Updated")
     })
   }
 

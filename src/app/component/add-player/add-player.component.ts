@@ -21,7 +21,7 @@ export class AddPlayerComponent implements OnInit {
   public addDataToDatabase()
   {
     this.tmService.addPlayer(this.tm).subscribe((data) =>{
-    // this.router.navigate(["/Team/All"])
+      alert("Player Added")
   })
 
   }

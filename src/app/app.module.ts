@@ -11,6 +11,7 @@ import { HomeComponent } from './component/home/home.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { RouterModule,Routes } from '@angular/router';
 import { ViewPlayerComponent } from './component/view-player/view-player.component';
+import { SearchPipe } from './Pipes/search.pipe';
 
 const routes:Routes = [
   {path:"",redirectTo:"Home" ,pathMatch:'full'},
@@ -28,7 +29,8 @@ const routes:Routes = [
     EditPlayerComponent,
     HomeComponent,
     NavBarComponent,
-    ViewPlayerComponent
+    ViewPlayerComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

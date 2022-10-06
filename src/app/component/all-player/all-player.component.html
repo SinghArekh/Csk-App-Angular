@@ -1,6 +1,20 @@
 <div class="container">
+  <div style="padding: 20px">
+
+    <input
+
+      [(ngModel)]="searchValue"
+
+      placeholder="SearchHere"
+
+      type="search"
+
+      class="form-control"
+    />
+
+  </div>
   <div class="row row-md-7" >
-      <div *ngFor="let p of plrList" class="card col-md-5 m-2">
+      <div *ngFor="let p of plrList | search : searchValue" class="card col-md-5 m-2">
           <div class="row">
               <div class="col-md-5">
                   <img style="height: 200px; width:200px" class="card-image" [src]=p.playerImg>
